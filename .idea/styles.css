@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+/* Header */
+header {
+    background-color: #FFD700;
+    padding: 20px;
+    text-align: center;
+    color: #1E90FF;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+header h1 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+header nav a {
+    margin: 0 15px;
+    color: #1E90FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Categories Section */
+.categories {
+    padding: 20px;
+    text-align: center;
+}
+.categories h2 {
+    color: #FFD700;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.category-buttons button {
+    background-color: #FF6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Pokémon Cards */
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 30px; /* Increase gap for better spacing */
+    padding: 20px;
+}
+
+.pokemon-card {
+    display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    justify-content: space-between; /* Place text at the bottom */
+    background-color: white;
+    border: 2px solid #FFD700;
+    border-radius: 10px;
+    width: 100%; /* Make cards take full space of the grid */
+    height: 300px; /* Fixed height for uniformity */
+    overflow: hidden; /* Hide overflow to keep everything within bounds */
+    text-align: center; /* Center all text in the card */
+}
+
+.pokemon-card img {
+    width: 100%; /* Make the image fill the entire card */
+    height: 75%; /* Image takes 75% of the card height */
+    object-fit: cover; /* Ensure the image covers the card properly */
+}
+
+/* Name Style (above the image) */
+.pokemon-card .name {
+    color: #ffcb1e; /* Bright yellow for name */
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px; /* Padding to create space between name and image */
+}
+
+/* Type Style (below the image) */
+.pokemon-card .type {
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent background */
+    color: #001a66; /* Dark blue color for type */
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    position: relative;
+    bottom: 0; /* Position text at the bottom */
+    width: 100%; /* Ensure text spans the whole width of the card */
+}
+
+/* Hover Effect */
+.pokemon-card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add subtle shadow effect */
+}
+
+/* Footer */
+footer {
+    background-color: #1E90FF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow to make it stand out */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .pokemon-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .pokemon-list {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}

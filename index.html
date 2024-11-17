@@ -12,13 +12,53 @@
     <nav>
         <a href="#">Startseite</a>
         <a href="#">Pokémon</a>
-        <a href="#">Kategorien</a>
-        <a href="#">Kontakt</a>
+        <a href="#" id="kategorienBtn">Kategorien</a> <!-- Kategorie Button -->
+        <a href="#" id="kontaktBtn">Kontakt</a> <!-- Kontakt button -->
         <a href="#">Login</a>
     </nav>
-</header>
 
-<section class="categories">
+</header>
+<!-- Contact Form Section -->
+<section class="contact-form" id="contactFormSection" style="display:none;">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Google Map Section -->
+<section class="contact-map" id="contactMapSection" style="display:none;">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=YOUR_GOOGLE_MAP_EMBED_URL" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq" id="faqSection" style="display:none;">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3>What is Pokémon Datenbank?</h3>
+        <p>This website allows you to browse and filter Pokémon by type and category. You can also add, edit, and manage your own collection of Pokémon.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How can I filter Pokémon?</h3>
+        <p>Click on the "Kategorien" button to select a category, and then the Pokémon list will filter based on the category you choose (e.g., Feuer, Wasser, etc.).</p>
+    </div>
+    <div class="faq-item">
+        <h3>How do I contact you?</h3>
+        <p>You can contact us by filling out the form in the "Contact Us" section or by emailing us directly at contact@yourwebsite.com.</p>
+    </div>
+</section>
+
+<section class="categories" id="categoriesSection" style="display:none;"> <!-- Initially hidden -->
     <h2>Kategorien</h2>
     <div class="category-buttons">
         <button>Feuer</button>
@@ -157,6 +197,46 @@
         <p class="type">Typ: Gestein</p>
     </div>
 </section>
+<!-- Contact Form Section -->
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" placeholder="Write your message here" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- Google Map Section -->
+<section class="contact-map">
+    <h2>Our Location</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4858.451402518176!2d13.52587920000001!3d52.4931539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a8492ec1bcdfbb%3A0x2973e0d479e1978c!2sTreskowallee%208%2C%2010318%20Berlin!5e0!3m2!1sen!2sde!4v1731803682523!5m2!1sen!2sde&z=14" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-item">
+        <h3>What is Pokémon Datenbank?</h3>
+        <p>This website allows you to browse and filter Pokémon by type and category. You can also add, edit, and manage your own collection of Pokémon.</p>
+    </div>
+    <div class="faq-item">
+        <h3>How can I filter Pokémon?</h3>
+        <p>Click on the "Kategorien" button to select a category, and then the Pokémon list will filter based on the category you choose (e.g., Feuer, Wasser, etc.).</p>
+    </div>
+    <div class="faq-item">
+        <h3>How do I contact you?</h3>
+        <p>You can contact us by filling out the form in the "Contact Us" section or by emailing us directly at hadilharrathi@pokemon.com.</p>
+    </div>
+</section>
+
 
 <footer>
     <p>&copy; 2024 Pokémon Datenbank | Impressum | Datenschutz</p>
